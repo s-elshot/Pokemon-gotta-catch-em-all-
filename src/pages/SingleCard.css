@@ -1,0 +1,55 @@
+.singleCard_Parent {
+    width:200px;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+
+    display: inline-block;
+    background: #fceea7;
+    margin: 10px;
+    font-family: Ebrima, serif;
+    color: #989494;
+    text-align: center;
+    filter:
+            drop-shadow(3px 3px 1px #484646);
+}
+
+h1 {
+    font-size: xxx-large;
+    font-weight: bolder;
+    opacity: 40%;
+    color: #bfbfbf;
+    display: block;
+    text-align: center;
+}
+
+.singleCardHeader {
+    color: #484646;
+
+
+}
+
+
+
+fieldset {
+    background: white;
+}
+
+.abilities {
+    display: block;
+    background: #f5d663;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    filter:
+            drop-shadow(2px 2px 1px #626161);
+
+
+    box-shadow: inset 0 0 15px #fce81d;
+
+}
+
+.propertyType {
+    font-weight: bold;
+}
