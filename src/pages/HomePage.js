@@ -1,17 +1,17 @@
-
 import React from 'react';
 
-
-
-function HomePage({pokemon,setPokemon}){
+function HomePage({pokemon}){
 
 return(
 
-    <ul>
+    <div>
+
         {pokemon && pokemon.map((type)=>{
-            return <li key={type.name}>{type.name}</li>
+            return <p key={type.name}>{type.name}</p>
             })}
-    </ul>
+
+
+    </div>
 
 );
 }
