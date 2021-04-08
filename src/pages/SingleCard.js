@@ -2,12 +2,13 @@ import React from 'react';
 import './SingleCard.css'
 import {ReactComponent as LoadingIcon} from "../assets/Ripple-1s-321px.svg";
 
-function SingleCard({singleCard,moves, abilities,type,loading}) {
 
+function SingleCard({singleCard,abilities,moves,type,loading}) {
 
 
     return (
         <>
+
             {loading && <LoadingIcon className="loader"/> }
             <span className="singleCard_Parent">
                 <h3 className="singleCardHeader">{singleCard.name}</h3>
