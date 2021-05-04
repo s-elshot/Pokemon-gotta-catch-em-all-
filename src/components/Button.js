@@ -2,22 +2,20 @@ import React from 'react';
 import "./Button.css"
 
 
-function Button({setCurrentPageUrl,nextPageUrl,previousPageUrl}){
+function Button({children, clickHandler, disabled}){
 
     return(
         <>
-            <span className="buttonPosition">
-                <button
-                    type="submit"
-                    onClick={ ()=>setCurrentPageUrl(previousPageUrl)}>Previous
-                </button>
-                <button
-                    type="submit"
-                    onClick={ ()=>setCurrentPageUrl(nextPageUrl)}>Next
-                </button>
-           </span>
-        </>
 
+                <button
+                    className="buttonPosition"
+                    type="submit"
+                    onClick={clickHandler}
+                    disabled={disabled}
+                >
+                    {children}
+                </button>
+        </>
     );
 }
 

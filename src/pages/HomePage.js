@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleCard from "./SingleCard";
 
 
 function HomePage({pokemon}){
@@ -6,8 +7,8 @@ function HomePage({pokemon}){
 return(
 
     <div>
-        {pokemon && pokemon.map((type)=>{
-            return <p key={type.name}> {type.name}</p>
+        {pokemon.results && pokemon.results.map((pokemon)=>{
+            return <SingleCard key={pokemon.name}/>
             })}
     </div>
 
